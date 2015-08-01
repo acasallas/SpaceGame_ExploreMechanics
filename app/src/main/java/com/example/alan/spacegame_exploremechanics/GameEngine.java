@@ -3,7 +3,10 @@ package com.example.alan.spacegame_exploremechanics;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.PointF;
 import android.util.Log;
+
+import java.util.ArrayList;
 
 /**
  * Created by Alan on 7/11/2015.
@@ -82,4 +85,19 @@ public class GameEngine {
         c.drawCircle(ballElement2.x, ballElement2.y, ballElement2.radius, ballElement2.getPaint());
         c.drawCircle(touchBall.x,touchBall.y,touchBall.radius,touchBall.getPaint());
     }
+
+    void collide(BallElement elem1, BallElement elem2) {
+        PointF newBasis = PhysicsUtil.toNorm(new PointF(elem2.x-elem1.x, elem2.y - elem1.y);
+        
+    }
+
+    void performCollisionDetection() {
+
+    }
+
+
+
+
+
+
 }
